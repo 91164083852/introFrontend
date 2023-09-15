@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Poltawski Nowy', serif;
+    color: rgb(248, 243, 252);
+}
+
+
+  .titulo{
+    color: #1279bd;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  header{
+    width: 100%;
+    height: 450px;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde11f, #ee9ca76e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde191, #ee9ca750), url(/img/portadaini.jpg) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0;
+  }
+
+  nav{
+    text-align: right ;
+    padding: 30px 50px 0 0;
+  }
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+ a{
+  color: #0a35f7fb;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+
+  .textos-header h1{
+    font-size: 70px;
+    color: rgb(67, 17, 206);
+    height: 70%;
+
+  }
+
+
+  .imagen-container{
+    width: 70%;
+  }
+
+ .container-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+
+ }
+  
+ .servicios{
+  background: #a9d2e273;
+
+ }
+
+ .galeria-servi{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ }
+
+ .imagen-servi{
+  width: 40%;
+  margin-bottom: 30px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  
+  border-radius: 1px;
+  
+
+ }
+
+ .imagen-servi > img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   
+
+ }
+
+ .galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(276, 29%, 93%, 0.7);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1px;
+}
+
+.galeria p{
+  color: #eb622b;
+  font-size: 45px;
+}
+
+.imagen-servi:hover .galeria{
+  transform: scale(1);
+}
+ button{
+ color: #06041a;
+ background-color: #f1eecb;
+ border-radius: 5%;
+ width: 100px;
+ padding: 15px;
+ height: 1px;
+ display: flex;
+ }
+
+
+footer{
+  
+  padding: 80px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  background-color: #18191b;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px  solid #eef6f7;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: rgb(243, 240, 245);
+  border-bottom: 3px  solid rgb(239, 245, 247);
+  padding-bottom: 5px;
+}
+
+
+.titulo-final{
+  text-align: center;
+}
+@media screen and (max-width:400px) {
+  header{
+    background-position: center;
+  }
+
+  .contenedor-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width:700px) {
+  header{
+    background-position: center;
+  }
+
+  .contenedor-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width:900px) {
+  header{
+    background-position: center;
+  }
+
+  .contenedor-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
